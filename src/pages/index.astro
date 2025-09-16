@@ -6,6 +6,7 @@ import Facebook from '../icons/Facebook.astro';
 import Instagram from '../icons/Instagram.astro';
 import Github from '../icons/Github.astro';
 import ProyectoCard from '../components/ProyectoCard.astro';
+import ProyectoCarrusel from '../components/ProyectoCarrusel.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -52,7 +53,7 @@ import ProyectoCard from '../components/ProyectoCard.astro';
 	<section id="sobre-mi" class="mt-70">
 		<h1 class="text-white text-3xl text-center font-semibold mb-12">Sobre mí</h1>
 		<section class="flex flex-row justify-around items-center  p-12">
-			<span class="text-white flex flex-col gap-4 max-w-xl">
+			<span class="text-white flex flex-col gap-4 max-w-xl p-24">
 				<h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un desarrollador de software apasionado por la tecnología y la innovación.</h2>
 			<p>Soy Adrián Martínez Ortiz, tengo 21 años y estudio Ingeniería en Sistemas Computacionales en el Tec de Morelia, actualmente en el séptimo semestre.
 				Cuento con 2 años de experiencia laboral como desarrollador de software en modalidad home office, con enfoque en backend, pero también con conocimientos 
@@ -68,9 +69,63 @@ import ProyectoCard from '../components/ProyectoCard.astro';
 	<!---Seccion de proyectos -->
 	<section id="proyectos" class="mt-89 flex flex-col justify-center items-center gap-12 mb-20">
 		<h1 class="text-white text-3xl text-center font-semibold mb-12">Proyectos</h1>
-		<ProyectoCard title="Aurea Meals" imgUrl="https://i.ibb.co/Jwyj1bdP/Aurea-project.webp" projectUrl="https://aurea-meals-bq7c.vercel.app/index.html"/>
+		<ProyectoCarrusel/>
+		<section id="tecnologias" class = "">
+		<h1 class="text-white text-3xl text-center font-semibold mb-12">Tecnologías</h1>
+		<div class = "grid grid-cols-2 grid-rows-2 gap-4 w-full">
+			<span class="flex flex-col justify-center items-center gap-4">
+				<h1>Backend</h1>
+				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>			<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
+				</div>
+	
+			</span>
+			<span class="flex flex-col justify-center items-center gap-4">
+				<h1>Frontend</h1>
+				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>			<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
+				</div>
+			</span>
+			<span class="flex flex-col justify-center items-center gap-4">
+				<h1>Aprendiendo</h1>
+				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>	
+			</div>
+			</span>
+			<span class="flex flex-col justify-center items-center gap-4">
+				<h1>Herramientas</h1>
+				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
+					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
 
+				</div>
+			</span>
+		</div>
 	</section>
+		
+	</section>
+	
+	
+
 
 	</main>
 </Layout>

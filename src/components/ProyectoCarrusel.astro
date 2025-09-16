@@ -1,0 +1,88 @@
+---
+import ProyectoCard from './ProyectoCard.astro';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+const projects = [
+    {
+        title: "Aurea Meals",
+        imageUrl: "https://i.ibb.co/Jwyj1bdP/Aurea-project.webp",
+        projectUrl: "https://aurea-meals-bq7c.vercel.app/index.html"
+    },
+    {
+        title: "Proyecto 2",
+        imageUrl: "URL_IMAGEN_2",
+        projectUrl: "URL_PROYECTO_2"
+    },
+    {
+        title: "Proyecto 3",
+        imageUrl: "URL_IMAGEN_3",
+        projectUrl: "URL_PROYECTO_3"
+    },
+    {
+        title: "Proyecto 4",
+        imageUrl: "URL_IMAGEN_4",
+        projectUrl: "URL_PROYECTO_4"
+    },
+    {
+        title: "Proyecto 5",
+        imageUrl: "URL_IMAGEN_5",
+        projectUrl: "URL_PROYECTO_5"
+    },
+    {
+        title: "Proyecto 6",
+        imageUrl: "URL_IMAGEN_6",
+        projectUrl: "URL_PROYECTO_6"
+    }
+];
+---
+
+<div class="relative w-full max-w-[1200px]">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            {projects.map(project => (
+                <div class="swiper-slide flex justify-center">
+                    <ProyectoCard {...project} />
+                </div>
+            ))}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<style>
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
+</style>
+
+<script>
+    import Swiper from 'swiper';
+    import { Navigation } from 'swiper/modules';
+
+    new Swiper('.swiper', {
+        modules: [Navigation],
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+</script>
