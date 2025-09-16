@@ -3,12 +3,13 @@ interface Props {
     title: string;
     imageUrl: string;
     projectUrl: string;
+    description?: string;
 }
 
-const { title, imageUrl, projectUrl } = Astro.props;
+const { title, imageUrl, projectUrl , description} = Astro.props;
 ---
 
-<div class="h-[350px] justify-center items-center flex flex-col w-96 py-50 
+<div class="h-[550px] justify-center items-center flex flex-col w-96 py-50 px-10
 gap-6 rounded-3xl
 bg-gradient-to-tr from-white/5 via-white/10 to-white/5">
     <section class="">
@@ -17,6 +18,7 @@ bg-gradient-to-tr from-white/5 via-white/10 to-white/5">
     </section>
     <section class="text-white text-center">
          <h1 class="text-3xl font-bold">{title}</h1>
+         <p class="text-sm p-4">{description}</p>
          <button class="bg-white/5 border-2 border-white py-2 px-4 rounded mt-10
          hover:bg-white hover:text-gray-800 transition-all duration-300">
          <a href={projectUrl}>Ver más</a></button>

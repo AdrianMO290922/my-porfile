@@ -77,9 +77,9 @@ import Docker from '../icons/back/Docker.astro';
 	</section>
 	<!---Seccion de about me -->
 	<section id="sobre-mi" class="mt-70">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12">Sobre mí</h1>
+		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Sobre mí</h1>
 		<section class="flex flex-row justify-around items-center  p-12">
-			<span class="text-white flex flex-col gap-4 max-w-xl p-24">
+			<span class="text-white flex flex-col gap-4 max-w-xl p-18">
 				<h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un desarrollador de software apasionado por la tecnología y la innovación.</h2>
 			<p>Soy Adrián Martínez Ortiz, tengo 21 años y estudio Ingeniería en Sistemas Computacionales en el Tec de Morelia, actualmente en el séptimo semestre.
 				Cuento con 2 años de experiencia laboral como desarrollador de software en modalidad home office, con enfoque en backend, pero también con conocimientos 
@@ -94,15 +94,19 @@ import Docker from '../icons/back/Docker.astro';
 	</section>
 	<!---Seccion de proyectos -->
 	<section id="proyectos" class="mt-89 flex flex-col justify-center items-center gap-12 mb-20">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12">Proyectos</h1>
+		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Proyectos</h1>
 		<ProyectoCarrusel/>
-		<section id="tecnologias" class = "">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12">Tecnologías</h1>
-		<div class = "grid grid-cols-2 grid-rows-2 gap-4 w-full">
-			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
+		
+	</section>
+	
+	<!---Seccion de Tecnologias -->
+	<section id="tecnologias" class = "flex flex-col justify-center items-center gap-12 mb-12 mt-80 px-80">
+		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Tecnologías</h1>
+		<div class = "grid grid-cols-2 grid-rows-2 gap-6 w-auto">
+			<span class="flex flex-col justify-center items-center gap-8 rounded-2xl hover:scale-105 transition-transform
 			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
 				<h1>Backend</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+				<div class="grid grid-cols-3 grid-rows-3 gap-8 w-full">
 
 					<span class="flex flex-col justify-center items-center gap-1.5">
 						<Java class="size-16 object-contain" />
@@ -235,9 +239,6 @@ import Docker from '../icons/back/Docker.astro';
 		</div>
 	</section>
 		
-	</section>
-	
-	
 
 
 	</main>
