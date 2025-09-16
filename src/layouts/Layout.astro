@@ -1,22 +1,48 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={Astro.props.description} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{Astro.props.title}</title>
 	</head>
-	<body>
+	<body >
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
+		
+		<Header />
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
+<style is:global>
+	:root{
+		color-scheme: light dark;
+
+	}
+	html{
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		line-height: 1.5;
+		
+		
+	}
 	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		background: #041e20;
+		display: flex;
+		flex-direction: column; 
+		min-height: 100vh;
+		scroll-behavior: smooth;
+		
+	}
+	@media (prefers-reduce-motion: reduce) {
+		* {
+			scroll-behavior: auto;
+		}
 	}
 </style>

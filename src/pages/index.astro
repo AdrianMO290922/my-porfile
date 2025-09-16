@@ -1,11 +1,68 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Linkedin from '../icons/linkedin.astro';
+import Facebook from '../icons/Facebook.astro';
+import Instagram from '../icons/Instagram.astro';
+import Github from '../icons/Github.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Portafolio-Adrián Martínez - Desarrollador de Software"
+		description="Portafolio de Adrián Martínez, desarrollador de software especializado en crear soluciones tecnológicas innovadoras y eficientes.">
+	<main>
+	<section class="flex flex-row mx-auto lg:w-[1500px] py-44">
+
+		<span class="flex flex-col justify-center items-center gap-8">
+			<img 
+			class="rounded-full size-50 "
+    		src="https://i.ibb.co/vvB79FfP/porfile-pic.jpg" 
+    		alt="Menu o imagen-portada" 
+    	>
+			<h1 class = "text-white text-3xl text-center semibold">Adrián Martínez Ortiz</h1>
+		</span>
+		<span class="w-full flex flex-col justify-between items-center gap-4">
+			<p class="text-white text-5xl font-bold">Software <span
+				class = "text-fuchsia-500  opacity-80">Developer</span></p>
+
+			<p class="text-white text-2xl text-center max-w-lg "><span class="text-fuchsia-500 font-bold ">"</span>Apasionado por crear <span class="text-fuchsia-500">soluciones</span> 
+				tecnológicas <span class="text-fuchsia-500">innovadoras</span> y eficientes que impulsen el progreso digital<span class="text-fuchsia-500 font-bold">"</span>.</p>
+			<div class="flex gap-8 flex-wrap py-4">
+		
+				<a class ="hover:scale-110 transition-transform " href="https://github.com/AdrianMO290922" title="Síguenos en GitHub">
+					<Github class="size-12 text-white" />
+				</a>
+				<a class = "hover:scale-110 transition-transform" href="https://www.linkedin.com/in/adrian-martinez-476976319/ " title="Síguenos en LinkedIn">
+					<Linkedin class="size-12" />
+				</a>
+				<a class="hover:scale-110 transition-transform" href="https://web.facebook.com/adrianmartinezo.martinezortiz" title="Síguenos en Facebook">
+				<Facebook class="size-12" />
+				</a>
+				<a class ="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://instagram.com" title="Síguenos en Instagram">
+				<Instagram class="size-12" />
+				</a>
+           
+        </div>	
+		</span>
+	</section>
+	<!---Seccion de about me -->
+	<section id="sobre-mi" class="mt-128">
+		<h1 class="text-white text-3xl text-center font-semibold mb-12">Sobre mí</h1>
+		<section class="flex flex-row justify-around items-center  p-12">
+			<span class="text-white flex flex-col gap-4 max-w-xl">
+				<h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un desarrollador de software apasionado por la tecnología y la innovación.</h2>
+			<p>Soy Adrián Martínez Ortiz, tengo 21 años y estudio Ingeniería en Sistemas Computacionales en el Tec de Morelia, actualmente en el séptimo semestre.
+				Cuento con 2 años de experiencia laboral como desarrollador de software en modalidad home office, con enfoque en backend, pero también con conocimientos 
+				en frontend básico, despliegues y coordinación de proyectos. Mi objetivo es seguir creciendo profesionalmente, creando soluciones eficientes y escalables.</p>
+		</span>
+		<span>
+			<img src="https://www.respuesta.com.mx/wp-content/uploads/2023/MAYO/30/itm_unicos_3005.jpg" 
+			alt="imagen-escuela"
+			class="h-96 object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-70%" >
+		</span>
+		</section>
+	</section>
+	</main>
 </Layout>

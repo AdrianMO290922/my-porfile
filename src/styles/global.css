@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Si quieres usar tokens o personalización, Tailwind v4 permite definir con @theme */
+@theme {
+  /* ejemplo de variables personalizadas */
+  --color-primary: #1e40af;
+  --color-secondary: #f59e0b;
+  /* etc */
+}
+
+/* Si usas plugins como typography, forms, los importas con @plugin */
+@plugin "@tailwindcss/typography";
