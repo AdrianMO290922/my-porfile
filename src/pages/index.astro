@@ -7,6 +7,32 @@ import Instagram from '../icons/Instagram.astro';
 import Github from '../icons/Github.astro';
 import ProyectoCard from '../components/ProyectoCard.astro';
 import ProyectoCarrusel from '../components/ProyectoCarrusel.astro';
+import JavaScript from '../icons/front/JavaScript.astro';
+import Html from '../icons/front/Html.astro';
+import Css from '../icons/front/Css.astro';
+import Figma from '../icons/front/Figma.astro';
+
+import Java from '../icons/back/Java.astro';
+import Csharp from '../icons/back/Csharp.astro';
+import SpringBoot from '../icons/back/SpringBoot.astro';
+import Supabase from '../icons/back/Supabase.astro';
+import TypeScript from '../icons/back/TypeScript.astro';
+import Elysia from '../icons/back/Elysia.astro';
+import Mysql from '../icons/back/Mysql.astro';
+import Postgre from '../icons/back/Postgres.astro';
+import SqlServer from '../icons/back/SqlServer.astro';
+import Python from '../icons/back/Python.astro';
+import Nest from '../icons/back/Nest.astro';
+import Astro from '../icons/front/Astro.astro';
+import Vue from '../icons/front/Vue.astro';
+import VisualCode from '../icons/tools/VisualCode.astro';
+import JetBrains from '../icons/tools/JetBrains.astro';
+import Postman from '../icons/tools/Postman.astro';
+import N8N from '../icons/tools/N8N.astro';
+import Git from '../icons/tools/Git.astro';
+import GitLab from '../icons/tools/GitLab.astro';
+import Docker from '../icons/back/Docker.astro';
+//import ContactForm from '../components/ContactForm.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -73,49 +99,136 @@ import ProyectoCarrusel from '../components/ProyectoCarrusel.astro';
 		<section id="tecnologias" class = "">
 		<h1 class="text-white text-3xl text-center font-semibold mb-12">Tecnologías</h1>
 		<div class = "grid grid-cols-2 grid-rows-2 gap-4 w-full">
-			<span class="flex flex-col justify-center items-center gap-4">
+			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
+			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
 				<h1>Backend</h1>
 				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>			<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
+
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Java class="size-16 object-contain" />
+						<p class="text-center text-xs">Java</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Csharp class="size-16 object-contain" />
+						<p class="text-center text-xs">C#</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<SpringBoot class="size-16 object-contain" />
+						<p class="text-center text-xs">Spring Boot</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Supabase class="size-16 object-contain" />
+						<p class="text-center text-xs">Supabase</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<TypeScript class="size-16 object-contain" />
+						<p class="text-center text-xs">TypeScript</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Elysia class="size-16 object-contain" />
+						<p class="text-center text-xs">Elysia</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Mysql class="size-16 object-contain" />
+						<p class="text-center text-xs">MySQL</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Postgre class="size-16 object-contain" />
+						<p class="text-center text-xs">PostgreSQL</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<SqlServer class="size-16 object-contain" />
+						<p class="text-center text-xs">SQL Server</p>
+					</span>
+
+				</div>
+			</span>
+			<span class="flex flex-col justify-center items-center gap-4
+			rounded-3xl hover:scale-105 transition-transform
+			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
+				<h1>Frontend</h1>
+				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Html class="size-16 object-contain" />
+						<p class="text-center text-xs">HTML</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Css class="size-16 object-contain" />
+						<p class="text-center text-xs">CSS</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<JavaScript class="size-16 object-contain" />
+						<p class="text-center text-xs">JavaScript</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<img src="/public/figma.svg" alt="" class="size-16 object-contain"/>
+						<p class="text-center text-xs">Figma</p>
+					</span>
+					
+
+					
 				</div>
 	
 			</span>
-			<span class="flex flex-col justify-center items-center gap-4">
-				<h1>Frontend</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>			<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
-				</div>
-			</span>
-			<span class="flex flex-col justify-center items-center gap-4">
+			
+			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
+			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
 				<h1>Aprendiendo</h1>
 				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>	
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Python class="size-16 object-contain" />
+						<p class="text-center text-xs">Python</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Nest class="size-16 object-contain" />
+						<p class="text-center text-xs">Nest js</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<img src="/public/favicon.svg" alt="" class="size-16 object-contain"/>
+						<p class="text-center text-xs">Astro</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Vue class="size-16 object-contain" />
+						<p class="text-center text-xs">Vue</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Docker class="size-16 object-contain" />
+						<p class="text-center text-xs">Docker</p>
+					</span>
 			</div>
 			</span>
-			<span class="flex flex-col justify-center items-center gap-4">
+			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
+			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-">
 				<h1>Herramientas</h1>
 				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Q3m0ZV/html-5.png" alt="HTML5" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/css-3.png" alt="CSS3" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7Y6y2nX/javascript.png" alt="JavaScript" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7W8VYt1/react.png" alt="React" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/7N0y0yB/node-js.png" alt="Node.js" class="size-20 object-contain"/>
-					<img src="https://i.ibb.co/4f1m0ZK/mongodb.png" alt="MongoDB" class="size-20 object-contain"/>
+				<span class="flex flex-col justify-center items-center gap-1.5">
+						<VisualCode class="size-16 object-contain" />
+						<p class="text-center text-xs">Visual Studio Code</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<JetBrains class="size-16 object-contain" />
+						<p class="text-center text-xs">JetBrains</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Postman class="size-16 object-contain" />
+						<p class="text-center text-xs">Postman</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<N8N class="size-16 object-contain" />
+						<p class="text-center text-xs">N8N</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Git class="size-16 object-contain" />
+						<p class="text-center text-xs">Git</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<Github class="size-16 object-contain" />
+						<p class="text-center text-xs">Github</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5">
+						<GitLab class="size-16 object-contain" />
+						<p class="text-center text-xs">GitLab</p>
+					</span>
 
 				</div>
 			</span>
