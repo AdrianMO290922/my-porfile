@@ -40,10 +40,11 @@ import Docker from '../icons/back/Docker.astro';
 
 <Layout title="Portafolio-Adrián Martínez - Desarrollador de Software"
 		description="Portafolio de Adrián Martínez, desarrollador de software especializado en crear soluciones tecnológicas innovadoras y eficientes.">
-	<main class="px-4">
-	<section class="flex flex-row mx-auto py-50 px-34 justify-between gap-24">
-
-		<span class="flex flex-col justify-center items-center  gap-8">
+	<main class="px-4 justify-center items-center">
+	<!-- <section class="flex flex-row mx-auto py-50 px-34 justify-between gap-24">-->
+		<section class="min-h-screen flex items-center justify-center py-16">
+			<div class="flex flex-row gap-16 max-w-7xl mx-auto">
+				<span class="flex flex-col justify-center items-center gap-8">
 			<img 
 			class="rounded-full size-50 mask-radial-from-45% "
     		src="https://i.ibb.co/vvB79FfP/porfile-pic.jpg" 
@@ -59,32 +60,50 @@ import Docker from '../icons/back/Docker.astro';
 				tecnológicas <span class="text-fuchsia-500">innovadoras</span> y eficientes que impulsen el progreso digital<span class="text-fuchsia-500 font-bold">"</span>.</p>
 			<div class="flex gap-8 flex-wrap py-4">
 		
-				<a class ="hover:scale-110 transition-transform " href="https://github.com/AdrianMO290922" title="Síguenos en GitHub">
+				<a class ="hover:scale-110 transition-transform " href="https://github.com/AdrianMO290922" 
+				target="_blank"
+				title="Síguenos en GitHub">
 					<Github class="size-12 text-white" />
 				</a>
-				<a class = "hover:scale-110 transition-transform" href="https://www.linkedin.com/in/adrian-martinez-476976319/ " title="Síguenos en LinkedIn">
+				<a class = "hover:scale-110 transition-transform" href="https://www.linkedin.com/in/adrian-martinez-476976319/ " 
+				target="_blank"
+				title="Síguenos en LinkedIn">
 					<Linkedin class="size-12" />
 				</a>
-				<a class="hover:scale-110 transition-transform" href="https://web.facebook.com/adrianmartinezo.martinezortiz" title="Síguenos en Facebook">
+				<a class="hover:scale-110 transition-transform" href="https://web.facebook.com/adrianmartinezo.martinezortiz" target="_blank" title="Síguenos en Facebook">
 				<Facebook class="size-12" />
 				</a>
-				<a class ="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://instagram.com" title="Síguenos en Instagram">
+				<a class ="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://instagram.com" target="_blank" title="Síguenos en Instagram">
 				<Instagram class="size-12" />
 				</a>
            
         </div>	
 		</span>
+
+			</div>
 	</section>
 	<!---Seccion de about me -->
 	<section id="sobre-mi" class="mt-70">
 		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Sobre mí</h1>
 		<section class="flex flex-row justify-around items-center  p-12">
-			<span class="text-white flex flex-col gap-4 max-w-xl p-18">
-				<h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un desarrollador de software apasionado por la tecnología y la innovación.</h2>
-			<p>Soy Adrián Martínez Ortiz, tengo 21 años y estudio Ingeniería en Sistemas Computacionales en el Tec de Morelia, actualmente en el séptimo semestre.
-				Cuento con 2 años de experiencia laboral como desarrollador de software en modalidad home office, con enfoque en backend, pero también con conocimientos 
-				en frontend básico, despliegues y coordinación de proyectos. Mi objetivo es seguir creciendo profesionalmente, creando soluciones eficientes y escalables.</p>
-		</span>
+			<span class="text-white flex flex-col gap-4 w-3xl p-18">
+    <h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un 
+        <span class="text-fuchsia-500">desarrollador de software</span> apasionado por la 
+        <span class="text-fuchsia-500">tecnología</span> y la 
+        <span class="text-fuchsia-500">innovación</span>.
+    </h2>
+    <p>
+        Soy Adrián Martínez Ortiz, tengo 21 años y estudio 
+        <span class="text-fuchsia-500">Ingeniería en Sistemas Computacionales</span> 
+        en el Tec de Morelia, actualmente en el séptimo semestre.
+        Cuento con <span class="text-fuchsia-500">2 años de experiencia</span> laboral 
+        como desarrollador de software en modalidad home office, con enfoque en 
+        <span class="text-fuchsia-500">backend</span>, pero también con conocimientos 
+        en <span class="text-fuchsia-500">frontend</span> básico, despliegues y 
+        coordinación de proyectos. Mi objetivo es seguir creciendo profesionalmente, 
+        creando soluciones <span class="text-fuchsia-500">eficientes y escalables</span>.
+    </p>
+</span>
 		<span>
 			<img src="https://www.respuesta.com.mx/wp-content/uploads/2023/MAYO/30/itm_unicos_3005.jpg" 
 			alt="imagen-escuela"
@@ -164,10 +183,10 @@ import Docker from '../icons/back/Docker.astro';
 						<JavaScript class="size-16 object-contain" />
 						<p class="text-center text-xs">JavaScript</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
+				<!-- 	<span class="flex flex-col justify-center items-center gap-1.5">
 						<img src="/public/figma.svg" alt="" class="size-16 object-contain"/>
 						<p class="text-center text-xs">Figma</p>
-					</span>
+					</span> -->
 					
 
 					
@@ -187,10 +206,10 @@ import Docker from '../icons/back/Docker.astro';
 						<Nest class="size-16 object-contain" />
 						<p class="text-center text-xs">Nest js</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
+					<!-- <span class="flex flex-col justify-center items-center gap-1.5">
 						<img src="/public/favicon.svg" alt="" class="size-16 object-contain"/>
 						<p class="text-center text-xs">Astro</p>
-					</span>
+					</span> -->
 					<span class="flex flex-col justify-center items-center gap-1.5">
 						<Vue class="size-16 object-contain" />
 						<p class="text-center text-xs">Vue</p>

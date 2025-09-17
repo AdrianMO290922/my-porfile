@@ -1,26 +1,30 @@
 ---
 import Logo from '../icons/tools/Logo.astro';
 ---
-<header id="header" class=" fixed top-0 z-50 flex justify-between items-center py-2 w-full  pl-12 pr-12
- transition-all duration-3000 ">
+<header id="header" class="fixed top-0 z-50 flex justify-between items-center py-2 w-full pl-12 pr-12
+ transition-all duration-300">
   
-    <Logo class="size-12" />
+    <Logo id="logo" class="size-12 transition-colors duration-300" />
     <nav class="flex gap-6">
-     <a href="/" class="hover:text-fuchsia-500  opacity-80">Inicio</a>
-     <a href="#sobre-mi" class="hover:text-fuchsia-500  opacity-80">Sobre mí</a>
-     <a href="#proyectos" class="hover:text-fuchsia-500  opacity-80">Proyectos</a>
-     <a href="#tecnologias" class="hover:text-fuchsia-500  opacity-80">Tecnologías</a>
+     <a href="/" class="hover:text-fuchsia-500 opacity-80">Inicio</a>
+     <a href="#sobre-mi" class="hover:text-fuchsia-500 opacity-80">Sobre mí</a>
+     <a href="#proyectos" class="hover:text-fuchsia-500 opacity-80">Proyectos</a>
+     <a href="#tecnologias" class="hover:text-fuchsia-500 opacity-80">Tecnologías</a>
     </nav>
 </header>
 
 <script>
     const header = document.querySelector('#header');
+    const logo = document.querySelector('#logo');
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('bg-black/50', 'backdrop-blur-sm');
+            logo.style.color = '#d946ef'; // Color fuchsia-500
         } else {
             header.classList.remove('bg-black/50', 'backdrop-blur-sm');
+            logo.style.color = 'white';
+        
         }
     });
 </script>
