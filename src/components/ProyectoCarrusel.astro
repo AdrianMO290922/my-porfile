@@ -19,7 +19,7 @@ const projects = [
     {
         title: "Página web de una inmobiliaria",
         imageUrl: "https://i.ibb.co/v4M5g069/casas.webp",
-        projectUrl: "https://inmohabi-landing-page.vercel.app/#nosotros",
+        projectUrl: "https://inmohabi.com.mx/",
         description: "Una página web para una inmobiliaria."
     },
     {
@@ -31,11 +31,11 @@ const projects = [
 ];
 ---
 
-<div class="relative w-full max-w-[1200px]">
+<div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="swiper">
         <div class="swiper-wrapper">
             {projects.map(project => (
-                <div class="swiper-slide flex justify-center">
+                <div class="swiper-slide flex justify-center items-center">
                     <ProyectoCard {...project} />
                 </div>
             ))}

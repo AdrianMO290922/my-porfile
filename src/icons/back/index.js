@@ -1,0 +1,1 @@
+expo { default } from './BackIcon.astro';[] 

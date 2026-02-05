@@ -1,12 +1,139 @@
 @import "tailwindcss";
 
-/* Si quieres usar tokens o personalización, Tailwind v4 permite definir con @theme */
+/* Variables de tema personalizadas */
 @theme {
-  /* ejemplo de variables personalizadas */
-  --color-primary: #1e40af;
-  --color-secondary: #f59e0b;
-  /* etc */
+  --color-fuchsia-primary: #d946ef;
+  --color-fuchsia-dark: #a21caf;
+  --color-dark-bg: #000000;
+  --color-dark-accent: #00091d;
 }
 
-/* Si usas plugins como typography, forms, los importas con @plugin */
+/* Plugins útiles */
 @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+/* Estilos globales mejorados */
+@layer base {
+  /* Smooth scrolling con fallback para navegadores antiguos */
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Estilos base para texto */
+  body {
+    @apply text-white antialiased;
+  }
+
+  /* Enlaces con transiciones suaves */
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  /* Botones base mejorados */
+  button {
+    @apply transition-all duration-300;
+  }
+
+  /* Imágenes responsivas */
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer components {
+  /* Contenedor principal responsivo */
+  .container-responsive {
+    @apply px-4 sm:px-6 lg:px-8 mx-auto;
+  }
+
+  /* Sección con padding responsivo */
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  /* Título principal responsivo */
+  .title-main {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold text-white;
+  }
+
+  /* Título secundario responsivo */
+  .title-secondary {
+    @apply text-xl sm:text-2xl lg:text-3xl font-semibold text-white;
+  }
+
+  /* Texto de descripción responsiva */
+  .text-description {
+    @apply text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed;
+  }
+
+  /* Botón estándar */
+  .btn-primary {
+    @apply bg-white/5 border-2 border-white py-2 px-4 rounded-lg font-medium text-sm sm:text-base hover:bg-white hover:text-gray-800 hover:border-white transition-all duration-300 transform hover:scale-105;
+  }
+
+  /* Card responsiva */
+  .card-responsive {
+    @apply bg-gradient-to-br from-white/5 via-white/10 to-white/5 rounded-2xl lg:rounded-3xl p-6 sm:p-8 backdrop-blur-sm hover:from-white/10 hover:via-white/15 hover:to-white/10 transition-all duration-300;
+  }
+
+  /* Grid responsivo */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Flex items iconos con etiquetas */
+  .icon-item {
+    @apply flex flex-col justify-center items-center gap-2 sm:gap-3 hover:scale-110 transition-transform;
+  }
+
+  /* Flex fila responsiva */
+  .flex-responsive {
+    @apply flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-12;
+  }
+}
+
+@layer utilities {
+  /* Efecto de opacidad en hover */
+  .hover-opacity {
+    @apply opacity-80 hover:opacity-100 transition-opacity duration-300;
+  }
+
+  /* Efecto de brillo */
+  .glow-effect {
+    @apply shadow-lg hover:shadow-2xl transition-shadow duration-300;
+  }
+
+  /* Gradiente de fondo mejorado */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-white/5 via-white/10 to-white/5;
+  }
+
+  /* Texto destacado */
+  .text-highlight {
+    @apply text-fuchsia-500 font-semibold;
+  }
+
+  /* Máscara radial útil */
+  .mask-blob {
+    @apply [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)];
+  }
+}
+
+/* Media queries para optimizar scroll en móviles */
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Optimización para pantallas de alto DPI */
+@media (min-resolution: 2dppx) {
+  img {
+    image-rendering: crisp-edges;
+  }
+}
+

@@ -23,7 +23,7 @@ import Postgre from '../icons/back/Postgres.astro';
 import SqlServer from '../icons/back/SqlServer.astro';
 import Python from '../icons/back/Python.astro';
 import Nest from '../icons/back/Nest.astro';
-import Astro from '../icons/front/Astro.astro';
+import AstroIcon from '../icons/front/Astro.astro';
 import Vue from '../icons/front/Vue.astro';
 import VisualCode from '../icons/tools/VisualCode.astro';
 import JetBrains from '../icons/tools/JetBrains.astro';
@@ -40,41 +40,43 @@ import Docker from '../icons/back/Docker.astro';
 
 <Layout title="Portafolio-Adrián Martínez - Desarrollador de Software"
 		description="Portafolio de Adrián Martínez, desarrollador de software especializado en crear soluciones tecnológicas innovadoras y eficientes.">
-	<main class="px-4 justify-center items-center">
-	<!-- <section class="flex flex-row mx-auto py-50 px-34 justify-between gap-24">-->
-		<section class="min-h-screen flex items-center justify-center py-16">
-			<div class="flex flex-row gap-16 max-w-7xl mx-auto">
-				<span class="flex flex-col justify-center items-center gap-8">
+	<main class="px-4 sm:px-6 lg:px-8 justify-center items-center">
+	<!-- Hero Section -->
+		<section class="min-h-screen flex items-center justify-center py-12 sm:py-16 lg:py-20">
+			<div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16 max-w-7xl mx-auto w-full">
+				<span class="flex flex-col justify-center items-center gap-6 sm:gap-8 flex-shrink-0">
 			<img 
-			class="rounded-full size-50 mask-radial-from-45% "
+			class="rounded-full size-40 sm:size-48 lg:size-56 object-cover shadow-2xl ring-2 ring-fuchsia-500/50 hover:ring-fuchsia-500 transition-all duration-300"
     		src="https://i.ibb.co/vvB79FfP/porfile-pic.jpg" 
-    		alt="Menu o imagen-portada" 
-    	>
-			<h1 class = "text-white text-3xl text-center semibold">Adrián Martínez Ortiz</h1>
+    		alt="Foto de perfil de Adrián Martínez" 
+    	/>
+			<h1 class="text-white text-2xl sm:text-3xl lg:text-4xl text-center font-semibold">Adrián Martínez Ortiz</h1>
 		</span>
-		<span class="w-full flex flex-col justify-between items-center gap-4">
-			<p class="text-white text-5xl font-bold">Software <span
-				class = "text-fuchsia-500  opacity-80">Developer</span></p>
+		<span class="w-full flex flex-col justify-center items-center lg:items-start gap-4 sm:gap-6">
+			<p class="text-white text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left leading-tight">Software <span
+				class="text-fuchsia-500 opacity-90">Developer</span></p>
 
-			<p class="text-white text-2xl text-center max-w-lg text-pretty"><span class="text-fuchsia-500 font-bold ">"</span>Apasionado por crear <span class="text-fuchsia-500">soluciones</span> 
-				tecnológicas <span class="text-fuchsia-500">innovadoras</span> y eficientes que impulsen el progreso digital<span class="text-fuchsia-500 font-bold">"</span>.</p>
-			<div class="flex gap-8 flex-wrap py-4">
+			<p class="text-white text-base sm:text-lg lg:text-xl text-center lg:text-left max-w-2xl text-pretty leading-relaxed"><span class="text-fuchsia-500 font-bold text-xl">"</span>Apasionado por crear <span class="text-fuchsia-500 font-semibold">soluciones</span> 
+				tecnológicas <span class="text-fuchsia-500 font-semibold">innovadoras</span> y eficientes que impulsen el progreso digital<span class="text-fuchsia-500 font-bold text-xl">"</span></p>
+			<div class="flex gap-6 sm:gap-8 flex-wrap py-4 justify-center lg:justify-start items-center">
 		
-				<a class ="hover:scale-110 transition-transform " href="https://github.com/AdrianMO290922" 
+				<a class="hover:scale-110 transition-transform duration-300" href="https://github.com/AdrianMO290922" 
 				target="_blank"
-				title="Síguenos en GitHub">
-					<Github class="size-12 text-white" />
+				rel="noopener noreferrer"
+				title="GitHub de Adrián">
+					<Github class="size-10 sm:size-12 text-white hover:text-fuchsia-500 transition-colors" />
 				</a>
-				<a class = "hover:scale-110 transition-transform" href="https://www.linkedin.com/in/adrian-martinez-476976319/ " 
+				<a class="hover:scale-110 transition-transform duration-300" href="https://www.linkedin.com/in/adrian-martinez-476976319/" 
 				target="_blank"
-				title="Síguenos en LinkedIn">
-					<Linkedin class="size-12" />
+				rel="noopener noreferrer"
+				title="LinkedIn de Adrián">
+					<Linkedin class="size-10 sm:size-12 hover:text-blue-400 transition-colors" />
 				</a>
-				<a class="hover:scale-110 transition-transform" href="https://web.facebook.com/adrianmartinezo.martinezortiz" target="_blank" title="Síguenos en Facebook">
-				<Facebook class="size-12" />
+				<a class="hover:scale-110 transition-transform duration-300" href="https://web.facebook.com/adrianmartinezo.martinezortiz" target="_blank" rel="noopener noreferrer" title="Facebook de Adrián">
+				<Facebook class="size-10 sm:size-12 hover:text-blue-600 transition-colors" />
 				</a>
-				<a class ="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-3 size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://instagram.com" target="_blank" title="Síguenos en Instagram">
-				<Instagram class="size-12" />
+				<a class="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-full hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0" href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram de Adrián">
+				<Instagram class="size-10 sm:size-12 text-white" />
 				</a>
            
         </div>	
@@ -83,174 +85,172 @@ import Docker from '../icons/back/Docker.astro';
 			</div>
 	</section>
 	<!---Seccion de about me -->
-	<section id="sobre-mi" class="mt-70">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Sobre mí</h1>
-		<section class="flex flex-row justify-around items-center  p-12">
-			<span class="text-white flex flex-col gap-4 w-3xl p-18">
-    <h2 class="text-2xl font-semibold">¡Hola! Soy Adrián Martínez, un 
-        <span class="text-fuchsia-500">desarrollador de software</span> apasionado por la 
-        <span class="text-fuchsia-500">tecnología</span> y la 
-        <span class="text-fuchsia-500">innovación</span>.
+	<section id="sobre-mi" class="mt-12 sm:mt-16 lg:mt-20 py-12 sm:py-16 lg:py-20 w-full">
+		<h1 class="text-white text-2xl sm:text-3xl lg:text-4xl text-center font-semibold mb-8 sm:mb-12 py-4 sm:py-8">Sobre mí</h1>
+		<section class="flex flex-col lg:flex-row justify-between items-center gap-8 sm:gap-10 lg:gap-16 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+			<div class="text-white flex flex-col gap-4 sm:gap-6 w-full lg:w-1/2">
+    <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-relaxed">¡Hola! Soy Adrián Martínez, un 
+        <span class="text-fuchsia-500 font-bold">desarrollador de software</span> apasionado por la 
+        <span class="text-fuchsia-500 font-bold">tecnología</span> y la 
+        <span class="text-fuchsia-500 font-bold">innovación</span>.
     </h2>
-    <p>
+    <p class="text-sm sm:text-base lg:text-lg leading-relaxed opacity-90">
         Soy Adrián Martínez Ortiz, tengo 21 años y estudio 
-        <span class="text-fuchsia-500">Ingeniería en Sistemas Computacionales</span> 
+        <span class="text-fuchsia-500 font-semibold">Ingeniería en Sistemas Computacionales</span> 
         en el Tec de Morelia, actualmente en el séptimo semestre.
-        Cuento con <span class="text-fuchsia-500">2 años de experiencia</span> laboral 
+        Cuento con <span class="text-fuchsia-500 font-semibold">2 años de experiencia</span> laboral 
         como desarrollador de software en modalidad home office, con enfoque en 
-        <span class="text-fuchsia-500">backend</span>, pero también con conocimientos 
-        en <span class="text-fuchsia-500">frontend</span> básico, despliegues y 
+        <span class="text-fuchsia-500 font-semibold">backend</span>, pero también con conocimientos 
+        en <span class="text-fuchsia-500 font-semibold">frontend</span> básico, despliegues y 
         coordinación de proyectos. Mi objetivo es seguir creciendo profesionalmente, 
-        creando soluciones <span class="text-fuchsia-500">eficientes y escalables</span>.
+        creando soluciones <span class="text-fuchsia-500 font-semibold">eficientes y escalables</span>.
     </p>
-</span>
-		<span>
+</div>
+		<div class="w-full lg:w-1/2 flex justify-center">
 			<img src="https://www.respuesta.com.mx/wp-content/uploads/2023/MAYO/30/itm_unicos_3005.jpg" 
-			alt="imagen-escuela"
-			class="h-96 object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-70%" >
-		</span>
+			alt="Instituo Tecnológico de Morelia"
+			class="h-64 sm:h-80 lg:h-96 w-full object-cover rounded-2xl lg:rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300" />
+		</div>
 		</section>
 	</section>
 	<!---Seccion de proyectos -->
-	<section id="proyectos" class="mt-89 flex flex-col justify-center items-center gap-12 mb-20">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Proyectos</h1>
+	<section id="proyectos" class="mt-12 sm:mt-16 lg:mt-20 py-12 sm:py-16 lg:py-20 flex flex-col justify-center items-center gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16 lg:mb-20 w-full px-4 sm:px-6 lg:px-8">
+		<h1 class="text-white text-2xl sm:text-3xl lg:text-4xl text-center font-semibold mb-4 sm:mb-8 py-4 sm:py-8">Proyectos</h1>
 		<ProyectoCarrusel/>
 		
 	</section>
 	
 	<!---Seccion de Tecnologias -->
-	<section id="tecnologias" class = "flex flex-col justify-center items-center gap-12 mb-12 mt-80 px-80">
-		<h1 class="text-white text-3xl text-center font-semibold mb-12 py-8">Tecnologías</h1>
-		<div class = "grid grid-cols-2 grid-rows-2 gap-6 w-auto">
-			<span class="flex flex-col justify-center items-center gap-8 rounded-2xl hover:scale-105 transition-transform
-			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
-				<h1 class="text-lg font-semibold">Backend</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-8 w-full">
+	<section id="tecnologias" class="flex flex-col justify-center items-center gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16 lg:mb-20 mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-8 w-full">
+		<h1 class="text-white text-2xl sm:text-3xl lg:text-4xl text-center font-semibold mb-4 sm:mb-8 py-4 sm:py-8 w-full">Tecnologías</h1>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-5xl">
+			<!-- Backend -->
+			<span class="flex flex-col justify-center items-center gap-6 sm:gap-8 rounded-2xl hover:scale-105 transition-transform duration-300 bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-6 sm:p-8">
+				<h1 class="text-base sm:text-lg font-semibold text-white">Backend</h1>
+				<div class="grid grid-cols-3 gap-4 sm:gap-6 w-full">
 
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Java class="size-16 object-contain" />
-						<p class="text-center text-xs">Java</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Java class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Java</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Csharp class="size-16 object-contain" />
-						<p class="text-center text-xs">C#</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Csharp class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">C#</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<SpringBoot class="size-16 object-contain" />
-						<p class="text-center text-xs">Spring Boot</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<SpringBoot class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Spring Boot</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Supabase class="size-16 object-contain" />
-						<p class="text-center text-xs">Supabase</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Supabase class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Supabase</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<TypeScript class="size-16 object-contain" />
-						<p class="text-center text-xs">TypeScript</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<TypeScript class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">TypeScript</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Elysia class="size-16 object-contain" />
-						<p class="text-center text-xs">Elysia</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Elysia class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Elysia</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Mysql class="size-16 object-contain" />
-						<p class="text-center text-xs">MySQL</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Mysql class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">MySQL</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Postgre class="size-16 object-contain" />
-						<p class="text-center text-xs">PostgreSQL</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Postgre class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">PostgreSQL</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<SqlServer class="size-16 object-contain" />
-						<p class="text-center text-xs">SQL Server</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<SqlServer class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">SQL Server</p>
 					</span>
 
 				</div>
 			</span>
-			<span class="flex flex-col justify-center items-center gap-4
-			rounded-3xl hover:scale-105 transition-transform
-			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
-				<h1 class="text-lg font-semibold">Frontend</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Html class="size-16 object-contain" />
-						<p class="text-center text-xs">HTML</p>
-					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Css class="size-16 object-contain" />
-						<p class="text-center text-xs">CSS</p>
-					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<JavaScript class="size-16 object-contain" />
-						<p class="text-center text-xs">JavaScript</p>
-					</span>
-				<!-- 	<span class="flex flex-col justify-center items-center gap-1.5">
-						<img src="/public/figma.svg" alt="" class="size-16 object-contain"/>
-						<p class="text-center text-xs">Figma</p>
-					</span> -->
-					
 
-					
+			<!-- Frontend -->
+			<span class="flex flex-col justify-center items-center gap-6 sm:gap-8 rounded-2xl hover:scale-105 transition-transform duration-300 bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-6 sm:p-8">
+				<h1 class="text-base sm:text-lg font-semibold text-white">Frontend</h1>
+				<div class="grid grid-cols-3 gap-4 sm:gap-6 w-full">
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Html class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">HTML</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Css class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">CSS</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<JavaScript class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">JavaScript</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<AstroIcon class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Astro</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Vue class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Vue</p>
+					</span>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Figma class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Figma</p>
+					</span>
 				</div>
-	
+
 			</span>
-			
-			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
-			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-8">
-				<h1 class="text-lg font-semibold">Aprendiendo</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Python class="size-16 object-contain" />
-						<p class="text-center text-xs">Python</p>
+
+			<!-- Aprendiendo -->
+			<span class="flex flex-col justify-center items-center gap-6 sm:gap-8 rounded-2xl hover:scale-105 transition-transform duration-300 bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-6 sm:p-8">
+				<h1 class="text-base sm:text-lg font-semibold text-white">Aprendiendo</h1>
+				<div class="grid grid-cols-3 gap-4 sm:gap-6 w-full">
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Python class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Python</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Nest class="size-16 object-contain" />
-						<p class="text-center text-xs">Nest js</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Nest class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Nest JS</p>
 					</span>
-					<!-- <span class="flex flex-col justify-center items-center gap-1.5">
-						<img src="/public/favicon.svg" alt="" class="size-16 object-contain"/>
-						<p class="text-center text-xs">Astro</p>
-					</span> -->
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Vue class="size-16 object-contain" />
-						<p class="text-center text-xs">Vue</p>
-					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Docker class="size-16 object-contain" />
-						<p class="text-center text-xs">Docker</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Docker class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Docker</p>
 					</span>
 			</div>
 			</span>
-			<span class="flex flex-col justify-center items-center gap-4 rounded-2xl hover:scale-105 transition-transform
-			bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-">
-				<h1 class="text-lg font-semibold">Herramientas</h1>
-				<div class="grid grid-cols-3 grid-rows-3 gap-2 w-full">
-				<span class="flex flex-col justify-center items-center gap-1.5">
-						<VisualCode class="size-16 object-contain" />
-						<p class="text-center text-xs">Visual Studio Code</p>
+
+			<!-- Herramientas -->
+			<span class="flex flex-col justify-center items-center gap-6 sm:gap-8 rounded-2xl hover:scale-105 transition-transform duration-300 bg-gradient-to-tr from-white/5 via-white/10 to-white/5 p-6 sm:p-8">
+				<h1 class="text-base sm:text-lg font-semibold text-white">Herramientas</h1>
+				<div class="grid grid-cols-3 gap-4 sm:gap-6 w-full">
+				<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<VisualCode class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">VS Code</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<JetBrains class="size-16 object-contain" />
-						<p class="text-center text-xs">JetBrains</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<JetBrains class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">JetBrains</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Postman class="size-16 object-contain" />
-						<p class="text-center text-xs">Postman</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Postman class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Postman</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<N8N class="size-16 object-contain" />
-						<p class="text-center text-xs">N8N</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<N8N class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">N8N</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Git class="size-16 object-contain" />
-						<p class="text-center text-xs">Git</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Git class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Git</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<Github class="size-16 object-contain" />
-						<p class="text-center text-xs">Github</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<Github class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">Github</p>
 					</span>
-					<span class="flex flex-col justify-center items-center gap-1.5">
-						<GitLab class="size-16 object-contain" />
-						<p class="text-center text-xs">GitLab</p>
+					<span class="flex flex-col justify-center items-center gap-1.5 sm:gap-2">
+						<GitLab class="size-12 sm:size-16 object-contain" />
+						<p class="text-center text-xs sm:text-sm text-white opacity-80">GitLab</p>
 					</span>
 
 				</div>
